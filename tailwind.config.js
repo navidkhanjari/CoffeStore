@@ -29,15 +29,33 @@ module.exports = {
       letterSpacing: {
         "tightest": "-0.065em"
       },
-      spacing:{
-        "30" : "7.5rem"
-      }
+      spacing: {
+        "30": "7.5rem"
+      },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: '1rem',
+          lg: '0.625rem',
+        },
+      },
     },
+    screens: {
+      xs: '480px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px'
+    },
+    backgroundImage: {
+      "home-mobile": "url(../images/headerBgMobile.webp)",
+      "home-desktop": "url(../images/headerBgDesktop.webp)"
+    }
   },
   plugins: [
-    function({addVariant}){
-      addVariant('child','&>*')
-      addVariant('child-hover','&>*:hover')
+    function ({ addVariant }) {
+      addVariant('child', '&>*')
+      addVariant('child-hover', '&>*:hover')
     }
   ],
 }
