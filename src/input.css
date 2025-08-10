@@ -131,7 +131,6 @@
     @media screen and (min-width: 1280px) {
         html.dark .products {
             background-image: url("../images/products-bg.png");
-            height: 900px;
         }
 
         .products {
@@ -152,6 +151,14 @@
         background: linear-gradient(270deg, rgba(0, 0, 0, 0.6) 33.85%, rgba(243, 244, 246, 0.1) 100%), url("../images/categories/category-right.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    .swiper-button-prev-custom {
+        @apply flex-center w-9 h-9 md:w-10 md:h-10 rounded-full bg-white text-zinc-700 dark:bg-zinc-700 dark:text-white hover:bg-gray-300 dark:hover:bg-white dark:hover:text-zinc-700 transition-all;
+    }
+
+    .swiper-button-next-custom {
+        @apply flex-center w-9 h-9 md:w-10 md:h-10 rounded-full bg-white text-zinc-700 dark:bg-zinc-700 dark:text-white hover:bg-gray-300 dark:hover:bg-white dark:hover:text-zinc-700 transition-all;
     }
 
 }
