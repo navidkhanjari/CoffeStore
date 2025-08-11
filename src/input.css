@@ -161,10 +161,16 @@
         @apply flex-center w-9 h-9 md:w-10 md:h-10 rounded-full bg-white text-zinc-700 dark:bg-zinc-700 dark:text-white hover:bg-gray-300 dark:hover:bg-white dark:hover:text-zinc-700 transition-all;
     }
 
+
+
 }
 
 @layer utilities {
     .flex-center {
         @apply flex items-center justify-center;
+    }
+
+    .coffee__club--item {
+        @apply ;
     }
 }
